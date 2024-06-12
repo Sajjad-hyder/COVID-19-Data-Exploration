@@ -1,4 +1,3 @@
-```sql
 /*
 Covid 19 Data Exploration
 
@@ -106,4 +105,3 @@ SELECT dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinatio
 FROM PortfolioProject..CovidDeaths dea
 JOIN PortfolioProject..CovidVaccinations vac ON dea.location = vac.location AND dea.date = vac.date
 WHERE dea.continent IS NOT NULL;
-```
